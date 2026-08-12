@@ -1,0 +1,59 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+.env.*
+
+# Model / data artifacts (keep repo clean)
+*.bin
+*.h5
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.tar
+*.gz
+*.zip
+
+# Logs and temp files
+*.log
+*.tmp
+/tmp/
+
+# OS files
+.DS_Store
+Thumbs.db
