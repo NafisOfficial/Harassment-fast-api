@@ -1,5 +1,5 @@
 import os
-from typing import Optional
+from pathlib import Path
 
 import torch
 from fastapi import FastAPI
@@ -9,7 +9,8 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 app = FastAPI(title="Harassment Detection API")
 
-MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+MODEL_DIR = str(PROJECT_ROOT)
 TOKENIZER_NAME = MODEL_DIR
 MODEL_NAME = MODEL_DIR
 
